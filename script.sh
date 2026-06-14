@@ -7,6 +7,17 @@ PING_IP=192.168.1.1
 PING_WAIT_TIME=1
 PING_COUNT=5
 
+# Gets the current date and time (adds it to the JSON output.)
+CURRENT_TIME=$(date +"%d/%m/%Y @ %H:%M:%S UTC")
+
+# The path to the repo/directory that will be pushed to GitHub.
+REPO_PATH="/home/orh4/orh4"
+# Path as to where the converted JSON output will be saved.
+JSON_PATH="$REPO_PATH/stats.json"
+# Path as to where the badge-friendly JSON output will be saved.
+BADGES_JSON_PATH="$REPO_PATH/badges_stats.json"
+
+# The commit message the script will send out.
 COMMIT_MSG="[AUTOMATED] updated: $(date +"%Y/%m/%d @ %H:%M:%S")"
 
 ### DEBUG MESSAGES ###
@@ -104,9 +115,6 @@ done
 
 ### JSON FORMAT ###
 
-# Gets the current date and time.
-CURRENT_TIME=$(date +"%d/%m/%Y @ %H:%M:%S")
-
 # Outputs the values of each stat into a JSON format.
 JSON_STRING=$(cat <<EOF
 {
@@ -120,15 +128,6 @@ JSON_STRING=$(cat <<EOF
 }
 EOF
 )
-
-# The path to the repo/directory that will be pushed to GitHub.
-REPO_PATH="/home/orh4/orh4"
-
-# Path as to where the converted JSON output will be saved.
-JSON_PATH="$REPO_PATH/stats.json"
-
-
-BADGES_JSON_PATH="$REPO_PATH/badges_stats.json"
 
 # Makes the file in the specified directory (also makes the directory if not already made.)
 mkdir -p "$(dirname "$JSON_PATH")"
@@ -155,7 +154,6 @@ cd "$REPO_PATH" || exit 1
 # The tag "--quiet" makes the whole "git diff" return only an exit code. 0 is there are no changes, and 1 if there are changes.
 # The "!" before the command inverts the output exit code. (i.e. If there is a change in the file, it will output the exit code 1, which then gets inverted into a 0, running the commands in the below if statement.)
 # In shell, and exit code "0" marks a "true" value while an exit code "1" marks a "false" value.
-
 git stash --quiet
 
 git pull origin main --rebase --quiet
