@@ -11,7 +11,7 @@ PING_COUNT=5
 CURRENT_TIME=$(date +"%d/%m/%Y @ %H:%M:%S UTC")
 
 # The path to the repo/directory that will be pushed to GitHub.
-REPO_PATH="/home/orh4/orh4"
+REPO_PATH="/home/your/repo/name"
 # Path as to where the converted JSON output will be saved.
 JSON_PATH="$REPO_PATH/stats.json"
 # Path as to where the badge-friendly JSON output will be saved.
