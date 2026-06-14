@@ -5,6 +5,7 @@ README is currently in the works, I already have this script working on my own G
 https://github.com/orh4
 
 An example of these badges would be:
+
 ![CPU TEMP](https://img.shields.io/badge/CPU%20TEMP-41°C-blue)
 ![ENERGY RATE](https://img.shields.io/badge/ENERGY%20RATE-3.46%20W-red)
 ![BATTERY PERCENTAGE](https://img.shields.io/badge/BATTERY%20PERCENTAGE-82%25-green)
