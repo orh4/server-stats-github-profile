@@ -116,6 +116,8 @@ Now, you have to push the changes made to your repository. I would recommend cre
 
 Since the script automatically runs every set amount of time (via cron), if you were to push these automated commits under your own username, it would spike up your contribution graph. It would be messy and honestly even a bit dishonest if you let this script farm commmits on your account. I __highly recommend creating a seperate GitHub bot account__ to carry out the automated commits for __transparency__ and separating __human commits__ from __automated commits.__
 
+You should create the bot account (preferrably with a username like "yourusername-bot") and add it as a Collaborator by going to your repository and going to ```Settings > Collaborators > Add people```.
+
 ### To push the changes made to your profile's repository (or your desired repository) run:
 ```
 git config credential.helper store
