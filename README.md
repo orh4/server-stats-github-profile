@@ -309,7 +309,7 @@ That just indicates the variables you have commented out. Nothing to worry about
 
 
 ### "I am getting messages in my GitHub inbox regarding failed GitHub actions."
-The GitHub workflow provided in this repository automatically runs every 15 minutes as a failsafe if it doesn't run when the script pushes out a commit. Most of the time, the README is already updated, and the "stats.json" hasn't changed, so it fails because there are no changed values or placeholder values to replace. You can modify the "README updater" workflow by going to ```.github/workflows``` and editing the "update-readme.yml" in your preferred text editor. Under "on:", then "push:", and then "schedule:" you can edit the cron config to whatever you like.
+The GitHub workflow provided in this repository automatically runs every 15 minutes as a failsafe if it doesn't run when the script pushes out a commit. Most of the time, the README is already updated, and the "stats.json" hasn't changed, so it fails because there are no changed values or placeholder values to replace. You can modify the "README updater" workflow by going to ```.github/workflows``` and editing the "update-readme.yml" in your preferred text editor. Under "on:" and then under "schedule:" you can edit the cron config to whatever you like.
 
 ### "My README doesn't automatically update."
 Check your cron config by running ```crontab -e``` and check whether your script is mentioned there and make sure it's correct path is given.
