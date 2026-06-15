@@ -122,13 +122,19 @@ Then generate the token.
 
 Now, copy the token and keep it safe as __you will be unable to view it again once you close the tab.__
 
-## STEP 5: (pushing changes)
+## STEP 5: (pushing changes + setting up a bot account)
+Now, you have to push the changes made to your repository. I would recommend creating a bot account on GitHub to carry out the automated commits. 
+
+Since the script automatically runs every set amount of time (via cron), if you were to push these automated commits under your own username, it would spike up your contribution graph. It would be messy and honestly even a bit dishonest if you let this script farm commmits on your account. I __highly recommend creating a seperate GitHub bot account__ to carry out the automated commits for __transparency__ and separating __human commits__ from __automated commits.__
+
 ### To push the changes made to your profile's repository (or your desired repository) run:
 ```
 git config credential.helper store
 git add .
 git push origin main
 ```
+Then enter your bot account's username and your fine-grained token.
+
 
 If ```git push origin main``` fails with a 403 error (not authorised), check your fine-grained token and make sure "Workflows" with "Read and write" permissions were included.
 
