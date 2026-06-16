@@ -136,7 +136,9 @@ There currently 12 static environment variables you can configure in the given "
 
 ### For Network:
 ```
-PING_IP (The IP which the script pings to get the avaerage latency from.) (eg. 8.8.8.8, google.com, your router's ip, etc.)
+PING_IP (The IP which the script pings to get the avaerage latency from.) (eg. 8.8.8.8, google.com, your     
+
+ router's ip, etc.)
 PING_WAIT_TIME (The time the script takes  between each ping) (in seconds)
 PING_COUNT (How many times the script will ping the given IP) (in integers)
 ```
@@ -173,7 +175,7 @@ You can comment out the statistics you don't want to collect (such as battery pe
 ```
 
 
-In the case where there is no "config.env" file (presumably because you deleted it), the script will just default to the values configured within it.
+In the case where there is no "config.env" file (presumably because you deleted it), the script will just default to the values configured within itself.
 
 ### GitHub Actions workflow (optional)
 You can edit the workflow given in this repository (named "update-readme.yml") by going to ```.github/workflows``` in your repository.
@@ -259,7 +261,7 @@ chmod +x script.sh
 ./script.sh
 ```
 
-Read the output and check for any errors. There is a [troubleshooting guide](#troubleshooting--q-a) on the bottom of this README if you need help.
+Read the output and check for any errors. There is a [troubleshooting guide](#troubleshooting--qa) on the bottom of this README if you need help.
 
 
 Then, on GitHub, first verify if the script's commit pushed the changes to your repository and then go back to the "GitHub Actions" page.
