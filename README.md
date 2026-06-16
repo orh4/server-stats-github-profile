@@ -1,5 +1,5 @@
 # server-stats-github-profile
-Display your server statistics on your Github profile or repo!
+Display your homelab/server's statistics on your GitHub profile or repository!
 
 I already have this script working on my own Github profile as a live demo of this repo, feel free to take a look!
 https://github.com/orh4
