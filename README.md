@@ -321,6 +321,13 @@ This script, as stated at the top, is currently Linux-only. My target audience i
 
 Of course, improvements and suggestions are valuable to me, and I will take all of them into consideration. I am to open any and all discussion regarding this project.
 
+Why did I start this project? Well, I wanted to view my server's basic statistics and monitor it while on the go, such as at school. I would normally use tailscale, but that was being blocked by my school's WiFi, so I thought about using GitHub as a work-around (GitHub is also being blocked on school's WiFi, anyways).
+I also wanted to learn a bit of shell, I have been using Linux for a while now and I wanted to test my competence a bit.
+I technically made this script in two days after reading shell documentation and reading about shell syntax, but I finished this project in about 2 weeks because of fine-tuning, polishing, documentaion, better and more error-handling, school, and etc. This script is still not perfect, but it works and I have done my best to make it easy to understand and configure.
+
+I also made this project as a fun way to show off your homelab on your GitHub profile. You can show that you run a homelab and you can do automation, which is a win-win in my opinion.
+The script only collects basic statistics, which shouldn't be a problem or a security risk displaying them online.
+
 # PLANS / TO-DO:
 1. Convert the variable stats into functions. (not a requirement, maybe a bit of over-engineering.) (LOW-MEDIUM PRIORITY)
 2. Possibly add more stats (although I am already happy with how it is already.) (LOW PRIORITY)
