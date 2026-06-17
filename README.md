@@ -181,7 +181,7 @@ You can edit the workflow given in this repository (named "update-readme.yml") b
 
 You can edit the cron config under "on:" and then "schedule:"
 
-You can also remove the values you don't use under the huge "run:" block in "steps:" by the removing the variables (eg. ENERGY_RATE) and the sed commands (eg. sed -i "s|__ENERGY_RATE__|$ENERGY_RATE|g" README.md AND sed -i "s|__BADGES_ENERGY_RATE__|$BADGES_ENERGY_RATE|g" README.md)
+You can also remove the values you don't use under the huge "run:" block in "steps:" by the removing the variables (eg. ```ENERGY_RATE```) and the sed commands (eg. ```sed -i "s|__ENERGY_RATE__|$ENERGY_RATE|g" README.md``` and ```sed -i "s|__BADGES_ENERGY_RATE__|$BADGES_ENERGY_RATE|g" README.md```)
 
 
 ### The README template
