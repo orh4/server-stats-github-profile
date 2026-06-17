@@ -128,6 +128,7 @@ Then enter your bot account's username and your fine-grained token.
 
 
 If ```git push origin main``` fails with a 403 error (not authorised), check your fine-grained token and make sure "Workflows" with "Read and write" permissions were included.
+If not, delete the fine-grained token and generate a new one with read-write permissions for __Contents__ and __Workflows__.
 
 ## STEP 6: (configuration)
 You have been given a "config.env" file. cd into your repository's folder and open it in your desired text editor (nano, nvim, vim, etc.)
