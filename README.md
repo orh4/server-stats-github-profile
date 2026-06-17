@@ -137,9 +137,7 @@ There currently 12 static environment variables you can configure in the given "
 
 ### For Network:
 ```
-PING_IP (The IP which the script pings to get the avaerage latency from.) (eg. 8.8.8.8, google.com, your     
-
- router's ip, etc.)
+PING_IP (The IP which the script pings to get the avaerage latency from.) (eg. 8.8.8.8, google.com, your router's ip, etc.)
 PING_WAIT_TIME (The time the script takes  between each ping) (in seconds)
 PING_COUNT (How many times the script will ping the given IP) (in integers)
 ```
